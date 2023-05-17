@@ -1,0 +1,13 @@
+{
+  "name": "Netflix Clone using GraphQL and Astra DB",
+  "description": "Let's code a Netflix Clone with GraphQL Pagination!",
+  "duration": "2 hours",
+  "skillLevel": "Beginner",
+  "githubUrl": "https://github.com/DataStax-Examples/astra-netflix",
+  "demoUrl": "https://sag-astra-netflix.netlify.app",
+  "gitpodUrl": "https://gitpod.io/#https://github.com/DataStax-Examples/astra-netflix",
+  "tags": [{ "name": "javascript" }, { "name": "GraphQL" }],
+  "category": "apps",
+  "priority": 1,
+  "heroImage": "https://raw.githubusercontent.com/DataStax-Examples/astra-netflix/master/hero.png"
+}

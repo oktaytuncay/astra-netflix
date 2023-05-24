@@ -15,7 +15,7 @@ const App = () => {
       body: limit,
     })
     const responseBody = await response.json()
-    setGenres(responseBody.data.sag_reference_list.values)
+    setGenres(responseBody.data.reference_list.values)
   }
 
   console.log(limit)

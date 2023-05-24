@@ -1,7 +1,7 @@
 mutation {
-  sag_reference_list: createTable(
+  reference_list: createTable(
     keyspaceName: "sag_netflix"
-    tableName: "sag_reference_list"
+    tableName: "reference_list"
     ifNotExists: true
     partitionKeys: [{ name: "label", type: { basic: TEXT } }]
     clusteringKeys: [{ name: "value", type: { basic: TEXT }, order: "ASC" }]

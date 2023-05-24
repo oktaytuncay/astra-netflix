@@ -12,7 +12,7 @@ if (!process.env.ASTRA_DB_APPLICATION_TOKEN) {
 
 const existsQuery = `
 query getAllGenres {
-  sag_reference_list (
+  reference_list (
     value: { label: "genre"},
     options: { limit: 20 }
   ) {
@@ -60,7 +60,7 @@ const sendGql = async (files, endpoint) => {
       body: JSON.stringify({ query: existsQuery }),
     });
     const responseJson = await response.json();
-    if (responseJson.data.sag_reference_list.values.length) {
+    if (responseJson.data.reference_list.values.length) {
       console.log("Data already loaded");
       process.exit();
     }

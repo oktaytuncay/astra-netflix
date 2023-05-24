@@ -1,4 +1,4 @@
-```json
+```sql
 mutation Insert_Genres {
   action: insertreference_list(value: {label:"genre", value:"Action"}) {
     value{value}

@@ -7,7 +7,7 @@ exports.handler = async function (event) {
 
   const query = `
     query getAllGenres {
-      sag_reference_list (
+      reference_list (
         value: { label: "genre"},
         options: { limit: ${JSON.stringify(limit)} }
       ) {

@@ -7,7 +7,7 @@ exports.handler = async function (event) {
   const url = `https://${process.env.ASTRA_DB_ID}-${process.env.ASTRA_DB_REGION}.apps.astra.datastax.com/api/graphql/${process.env.ASTRA_DB_KEYSPACE}`;
   const query = `
   query {
-    sag_movies_by_genre (
+    movies_by_genre (
       value: { genre: ${JSON.stringify(genre)}},
       orderBy: [year_DESC],
       options: { pageSize: 6, pageState: ${JSON.stringify(pageState)} }

@@ -1,10 +1,11 @@
 1. Before you begin, check if the `reference_list` and `movies_by_genre` tables exist in the GraphQL database.
 
     ```sql
+    #In the graphsql tab
     query list_all_tables {
-    __schema {
+      __schema {
         queryType {
-        fields {
+          fields {
             name
           }
         }
@@ -14,8 +15,10 @@
 
 2. If there are, drop them with the query below, if not, please skip step 3.
 
+
     ```sql
     #Drop the movies_by_genre table if exist
+    #In the graphsql-schema tab
     mutation drop_table_movies_by_genre { dropTable 
       (
         keyspaceName:"sag_netflix",
@@ -36,6 +39,7 @@
 
     ```sql
     #Create the reference_list table
+    #In the graphsql-schema tab
     mutation create_reference_list_table{
     sag_reference_list: createTable(
         keyspaceName: "sag_netflix"
@@ -64,8 +68,11 @@
         ]
       )
     }
+    ```
 
+    ```sql
     #Check if tables are created
+    #In the graphsql tab
     query list_all_tables {
     __schema {
         queryType {
